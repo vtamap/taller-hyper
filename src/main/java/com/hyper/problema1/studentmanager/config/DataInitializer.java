@@ -41,7 +41,6 @@ public class DataInitializer {
         for (String materia : materias) {
             Grade grade = new Grade();
             grade.setMateria(materia);
-            // Random score between 50 and 100, rounded to 2 decimals
             double rawScore = 50 + Math.random() * 50;
             double roundedScore = Math.round(rawScore * 100.0) / 100.0;
             grade.setPuntaje(roundedScore);
